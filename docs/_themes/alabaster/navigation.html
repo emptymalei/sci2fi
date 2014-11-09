@@ -1,0 +1,18 @@
+<h3>科幻菜单</h3>
+{{ toctree(includehidden=theme_sidebar_includehidden) }}
+{% if theme_extra_nav_links %}
+<hr />
+<ul>
+    {% for text, uri in theme_extra_nav_links.items() %}
+    <li class="toctree-l1"><a href="{{ uri }}">{{ text }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
+<ul>
+	<li><a href="genindex.html">索引</a></li>
+</ul>
+<h3>相关链接</h3>
+<ul>
+	<li class="toctree-l1"><a href="http://interimm.org" style="color:orange;">星际移民中心&nbsp;<i class="fa fa-rocket"></i></a></li>
+	<li class="toctree-l1"><a href="http://interimm.org/exoplanets" style="color:orange;">系外行星文档&nbsp;<i class="fa fa-globe"></i></a></li>
+</ul>
