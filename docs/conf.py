@@ -51,7 +51,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'科学到科幻'
+project = u'科学与科幻'
 copyright = u'2014, 章鱼喵'
 
 # The version info for the project you're documenting, acts as replacement for
