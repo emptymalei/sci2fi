@@ -35,6 +35,7 @@ import os
 
 extensions = [
     'sphinx.ext.mathjax',
+    'sphinx.ext.todo',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -353,3 +354,9 @@ epub_copyright = u'2014, OctoMiao'
 
 # If false, no index is generated.
 #epub_use_index = True
+
+
+
+
+# Show Todo list and to do
+todo_include_todos = True
