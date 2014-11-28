@@ -24,9 +24,8 @@
    astro.rst
    interdispline.rst
    social.rst
-   history.rst
    superpower.rst
-   alternatehistory.rst
+   history.rst
 
 
 
