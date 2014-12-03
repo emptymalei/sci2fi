@@ -26,6 +26,7 @@
    social.rst
    superpower.rst
    history.rst
+   misc.rst
 
 
 
