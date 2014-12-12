@@ -40,3 +40,8 @@
 
 .. image:: https://raw.github.com/opentf/GuokrBadge/master/cc/gs/cc_bysa.flat.guokr.32.png
    :align: center
+
+引用此项目可以使用的 DOI
+
+.. image:: https://zenodo.org/badge/7726/emptymalei/sci2fi.svg   
+   :target: http://dx.doi.org/10.5281/zenodo.13220
