@@ -1,0 +1,30 @@
+img {
+	max-width:100%;
+	max-height:100%;
+}
+div.important {
+border: solid 2px #4183c4 !important;
+border-radius: 4px !important;
+padding: 10px 15px 10px 50px !important;
+background: none !important;
+}
+
+div.warning {
+padding: 10px 15px 10px 50px !important;
+border: solid 2px #FFD890 !important;
+border-radius: 4px !important;
+background: none !important;
+}
+
+div.hint {
+padding: 10px 15px 10px 50px !important;
+border: solid 2px #BFE2B7 !important;
+border-radius: 4px !important;
+}
+
+div.note {
+padding: 10px 15px 10px 50px !important;
+border: solid 2px lightgrey !important;
+border-radius: 4px !important;
+background: none !important;
+}

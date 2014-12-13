@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>物理</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="astro.html" title="天体物理"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="科学与科幻"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">科学与科幻 3.14 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>物理</h1>
+<p>物理在目前科幻里面出镜率大概可以可匹敌生物，再加上我的专业背景，所以如果将来没有其他人加入到这个文档的编辑中来的话，这大概也会是内容最多的一章了。</p>
+<div class="section" id="id2">
+<h2><span class="target" id="index-0"></span>太空旅行</h2>
+<div class="section" id="id3">
+<h3><span class="target" id="index-1"></span>曲率推进</h3>
+<p>这是一个在科幻中几乎用烂了的点子，然而这背后确实是有相关的科学研究的，主要是基于广义相对论的研究。关于这部分，在 <a class="reference external" href="http://interimm.org/InterImmBook/tech/propulsion.html">《星际移民之书》</a><span class="link-target"> [http://interimm.org/InterImmBook/tech/propulsion.html]</span> 中有过简短的介绍。</p>
+<p>曲率推进的主要的理论依据是广义相对论。Alcubierre 在二十世纪末提出了相关的理论，但是由于当时技术的限制，并不能对这类引擎进行试验。<a href="#id37"><span class="problematic" id="id38"><span id="id5"></span>[1]_</span></a></p>
+<p>Alcubierre 类推进的主要原理是产生一个时空泡泡，然后通过移动这个时空泡泡来移动飞船。其实就是通过操控 <strong>空间</strong> 来从一个地方移动到另一个地方的推进技术。</p>
+<div class="figure align-center">
+<img alt="https://upload.wikimedia.org/wikipedia/commons/c/c4/Alcubierre.png" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Alcubierre.png" />
+<p class="caption">Alcubierre 推进</p>
+</div>
+<p>如果把 <strong>空间</strong> 看作是橡皮膜，那么 warp drive 实际上就是在通过压缩前方的空间，拉伸后方的空间来「移动」的。就是说，我们想从 A 点出发到达 B 点，实际上我们只需要把飞船前方的空间压缩一下，全部拿到飞船的后方来，不就可以到达 B 点了么。有点像是，「我不过去，山会过来」。如果我们仅仅操控空间，而不影响时间，那么就太好了，我们可以从 A 以任意 <strong>速度</strong> 到达 B 地点，但是总会花费一点时间，因为我们把空间这块 <strong>橡皮膜</strong> 压缩起来或者伸展开去总需要一定的时间吧。</p>
+<p>这种推进有种很大的优势，那就是飞船里面的人不会察觉到飞船移动状况的改变，因为局域的来看，我们实际上根本没动。</p>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[1]</td><td><a class="reference external" href="http://arxiv.org/abs/gr-qc/0009013">The warp drive: hyper-fast travel within general relativity</a><span class="link-target"> [http://arxiv.org/abs/gr-qc/0009013]</span> By Miguel Alcubierre.</td></tr>
+</tbody>
+</table>
+<div class="note admonition">
+<p class="first admonition-title">曲率推进进阶</p>
+<blockquote class="last">
+<div><p>Warp drive 可以达到很多倍的光速，而且时间膨胀效应很小，所以 warp drive 就是我们理想的载人航行器！</p>
+<p>Miguel Alcubierre 提出了一种神秘的度规，这种度规恰好可以帮我们实现曲率推进，该度规就被称为 Alcubierre metric.</p>
+<p>Alcubierre 度规是像是一个可以将飞船包裹起来的时空泡泡，泡泡内部还是正常的闵氏时空，然而这个时空泡泡却有一个时空剧烈变动的外壳。</p>
+<p>Einstein 的场方程的两端可以分别是物质和时空，现在要做的只是设计一个合理的度规，然后按照上面的方程解出所需要的物质的分布和特性。</p>
+<p><strong>推进器的重要参数 —— warp factor</strong></p>
+<p>在 Star Trek 中，速度一直是使用 warp N 来表示的，warp 1 表示一倍光速，其他的按照</p>
+<div class="math">
+\[v=w^3c\]</div>
+<p>来计算，其中 <span class="math">\(v\)</span> 是闵氏时空中的测量速度，<span class="math">\(c\)</span> 是光速，<span class="math">\(w\)</span> 便是 warp factor（扭曲因子，wikipedia 上翻译为「曲率层级」，我觉得不够直观）。一开始的时候，开到 warp 5 就已经不得了了呢。</p>
+<p>后来的剧集中，Okuda 更改了 warp factor 的定义，新的定义为 warp factor 为 1-9 时</p>
+<div class="math">
+\[v=w^{10/3}c\]</div>
+<p>而超过 9 就直接手绘了一条趋向无穷的曲线。到了 1995 年，有人给出了一个解析公式。下图是 <a class="reference external" href="http://en.wikipedia.org/wiki/File:Warptable.gif">wikipedia 中的新旧 warp factor 的对照表以及其能量需求等等量直接的关系</a><span class="link-target"> [http://en.wikipedia.org/wiki/File:Warptable.gif]</span> 。</p>
+<div class="figure align-center">
+<img alt="http://upload.wikimedia.org/wikipedia/en/4/4b/Warptable.gif" src="http://upload.wikimedia.org/wikipedia/en/4/4b/Warptable.gif" />
+<p class="caption">Warp Factor</p>
+</div>
+<p><strong>Alcubierre 度规</strong></p>
+<p>Alcubierre 度规可以从 ADM 形式中猜出来，但是这个 Alcubierre 前辈已经写出来了，所以只需要把前辈的那个抄过来，</p>
+<div class="math">
+\[\mathrm ds^2 = -\mathrm dt^2+(\mathrm dx - v_s f(r_s)\mathrm dt)^2 + \mathrm dy^2 + \mathrm dz^2\]</div>
+<p>其中，</p>
+<div class="math">
+\[v_s=\mathrm dx_s/\mathrm dt\]</div>
+<div class="math">
+\[r_s=((x -x_s)^2 + y^2 + z^2)^{1/2}\]</div>
+<div class="math">
+\[f(r_s)=[\tanh(\sigma(r_s + R))-\tanh(\sigma(r_s - R))]/[2\tanh(\sigma R)]\]</div>
+<p>并且 <span class="math">\(\sigma&gt;0\)</span>，<span class="math">\(R&gt;0\)</span>。</p>
+<p>怎么看这个度规呢，其实我们可以把飞船看做一个点，放在 <span class="math">\(x_s\)</span> 并让飞船的轨迹沿着 x 轴，然后 <span class="math">\(r_s\)</span> 可以看做是离开飞船的距离。然后我们看一下 <span class="math">\(f(r_s)\)</span> 这个函数的渐进行为。这个函数里面的 <span class="math">\(\sigma\)</span> 这个参数是用来调节 <span class="math">\(\tanh\)</span> 函数的陡峭程度的，同时也可以调节 <span class="math">\(f(r_s)\)</span> 这个函数的陡峭程度。下面我们看一个极端情况</p>
+<div class="math">
+\[\begin{split}\lim_{\sigma\rightarrow\infty} f(r_s)=\begin{cases} 1 &amp; r_s\in [-R, R]\\0 &amp; \text{其他.} \end{cases}\end{split}\]</div>
+<p>也就是说，这是一个帽子函数。<span class="math">\(\sigma\)</span> 越大，这个帽子就越陡，而且中心越平坦。
+实际上这保证了离飞船比较远的地方依然是闵氏时空。</p>
+<p>有了 metric ，你就可以依据这个 metric 来计算所需要的物质了，然后就是如何得到这种物质并且给出特定的分布。在这之前，你需要检验一下这个度规是否真的满足我们的需求，对不对？</p>
+<p>首先，检查一下飞船远处的时空状况。此时 <span class="math">\(r_s\)</span> 很大，度规退化成</p>
+<div class="math">
+\[\mathrm ds^2 = -\mathrm dt^2+\mathrm dx ^2 + \mathrm dy^2 + \mathrm dz^2\]</div>
+<p>恰是闵氏度规。</p>
+<p>这样形象的来看，飞船就是被包裹在一个「时空蛋壳」里了。那么这个飞船可以行进多快呢？答案是想多快就多快。</p>
+<p>因为飞船的移动完全依赖于 <span class="math">\(v_s\)</span> 的大小，我们通过调节这个参数的大小，就可以调节飞船在无穷远的人看来的「移动速度」。而且，Alcubierre 证明，这种移动没有时间上的膨胀效应，也就是说，在无穷远的人看来，如果飞船花了一天从 A 地点到达了 B 地点，那么飞船上的人也是同样这么认为的。</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="krasnikov">
+<h3><span class="target" id="index-2"></span>Krasnikov 通道</h3>
+<p>Krasnikov 通道是一种通过对时空进行修改从而达到一次修建多次使用的技术。<a class="footnote-reference" href="#id8" id="id7">[2]</a></p>
+<p>通过修改时空来缩短两点之间的距离，使得时空形成一条稳定的管道，从而达到在两点之间快速移动的目的。</p>
+<p>Krasnikov 仔细分析了管道的修建和因果关系，所以这类通道叫做 Krasnikov 通道。</p>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[2]</a></td><td><a class="reference external" href="http://arxiv.org/abs/gr-qc/0207057">The quantum inequalities do not forbid spacetime shortcuts</a><span class="link-target"> [http://arxiv.org/abs/gr-qc/0207057]</span> By S. Krasnikov.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="heim">
+<h3><span class="target" id="index-3"></span>Heim 理论</h3>
+<p>在二十世纪 B. Heim 的几何化的场论为我们提供了描述两种不同于引力、电磁力、弱相互作用、强相互作用四种力的新的相互作用，并且提供了电磁相互作用和引力的更加紧密的联系的描述。这使得我们可以通过电磁力来操控引力。<a class="footnote-reference" href="#id10" id="id9">[3]</a></p>
+<p>Heim 的理论中，通过在不同的能量之间相互转换，既可以将飞船移动，不消耗推进剂也可以推进飞船。</p>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id9">[3]</a></td><td><a class="reference external" href="http://www.hpcc-space.com/publications/documents/PrinciplesOfAdvancedSpacePropulsionAIAA-paper-2002-4094.pdf">Physical principles of advanced space propulsion based on Heins&#8217; field theory</a><span class="link-target"> [http://www.hpcc-space.com/publications/documents/PrinciplesOfAdvancedSpacePropulsionAIAA-paper-2002-4094.pdf]</span></td></tr>
+</tbody>
+</table>
+<span class="target" id="index-4"></span></div>
+</div>
+<div class="section" id="index-5">
+<span id="id11"></span><h2>星际飞船、星际战争与伽玛暴</h2>
+<div class="note admonition">
+<p class="first admonition-title">Gamma-ray Burst，伽玛射线暴</p>
+<p>伽玛暴，即 gamma-ray burst， 是现代天体物理中一个尚未解决的难题。在极短的时间天空中某点的伽玛射线（gamma ray）强度突然剧增，然后又骤减，释放巨大的能量。</p>
+<p>目前观测到的伽玛暴有几个特点，除了光子能量高、释放能量大、持续时间短等特点，它们在天空中的分布的各项同性（各个方向均匀分布）的特色也是非常令人类痴迷的。</p>
+<div class="figure align-center">
+<img alt="_images/GRB-BATSE-2704.jpg" src="_images/GRB-BATSE-2704.jpg" />
+<p class="caption">BATSE 的 GRB 结果。可见这些爆发在宇宙中是各向同性的。图片来源 <a class="reference external" href="https://commons.wikimedia.org/wiki/File:BATSE_2704.jpg">File:BATSE 2704.jpg on Wikipedia</a><span class="link-target"> [https://commons.wikimedia.org/wiki/File:BATSE_2704.jpg]</span> 。</p>
+</div>
+<p>现在的理论暗示了某些类型的 GRB 可能跟恒星的核心塌缩过程有关。[^1]_ 实际上我们甚至观测到了 GRB 与核心塌缩超新星爆发的关联：GRB 980425，红移为 <span class="math">\(z = 0.0085\)</span>，同样的方向发现的超新星爆发是 1998 bw，为 Type Ic 型。</p>
+<table class="last docutils footnote" frame="void" id="id12" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[1]</td><td>恒星的核心塌缩（core collapse）过程，即恒星核心塌缩的过程。稳定的恒星是引力与向外的压强平衡的结果，倘若恒星引力越来越大，从而用来平衡引力的压强不再足以支撑整个恒星，恒星就会塌缩，直到产生新压强形成新的平衡，或者形成黑洞。超新星根据有没有氢谱线分类两大类，其中第一类中 b 型和 c 型（Ib 型和 Ic 型）被认为是核塌缩形成的。</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="grb">
+<h3>GRB 作为星际战争中的武器</h3>
+<p>由于能量之巨大，我们（的脑洞）可以将 GRB（伽玛暴）跟宇宙战争联系起来。如此巨大的能量释放，用来杀害确实是效率之高，但是为了防止射线伤害到自己，需要让射线有一定的方向性。</p>
+<div class="note admonition">
+<p class="first admonition-title">GRB 方向性</p>
+<p class="last">在天体物理理论中，是考虑 GRB 可能是带有方向性的，因为它的能量太大了，倘若 GRB 释放能量的时候是各个方向等同的，那么它所释放的总能量远超过了整个超新星所能释放的总能量，这是极难理解的，我们无法找到这样一个物理过程。所以理论上的一个解释是，GRB 是由高速运动的物质的相对论束流效应（relativistic beaming effect）产生的，这种 beaming effect 可以使得能量的释放集中在物质前进的方向，而且会产生蓝移使得辐射光子的能量变高。这样正好符合 GRB 的要求：集中在某个方向释放能量，不用担心整体的能量太高（太高的话甚至超过超新星的话我们就要担心能量来源了），而且是在高能光子波段。</p>
+</div>
+<p>设想这样一个场景，帝国 A 与帝国 B 发生了星际战争，帝国 A 为了消灭帝国 B 在一个星系中的据点，便朝向那个方向发射 GRB，高能射线杀死对方绝大多数有生力量。不巧这个 GRB 的方向对准了地球，就被我们看到了。</p>
+<p>然而我们所观测到的 GRB 是各向同性的，也就是说在天空中各个方向的 GRB 的数密度大致相同，倘若这是战争，那么就说明战争在我们周围均匀的发生着，起初看来这是非常难以理解的，除非我们宇宙之中文明非常多，而且战争是文明历史上正常的事件。倘若战争这种事情发生非常频繁的话，在整个宇宙尺度上，从地球看来各项同性也就不是那么难以理解了。</p>
+<div class="note admonition">
+<p class="first admonition-title">极端古老的智慧生命</p>
+<p>在 <em>The highest redshift gamma-ray bursts</em> 一文中，可以发现有些 GRB 可以发生在非常古老的宇宙中，GRB 最古老的可以接近红移 10。<a class="footnote-reference" href="#id18" id="id13">[4]</a> <a class="footnote-reference" href="#id19" id="id14">[5]</a></p>
+<p>那个时候产生智慧生命还要爆发战争是很难解释的。不过 Harvard Center for Astrophysics 的教授 Abraham Loeb 曾经写过一篇名为 The Habitable Epoch of the Early Universe 文的文章，<a href="#id39"><span class="problematic" id="id40"><span id="id15"></span>[8]_</span></a> 试图证明在宇宙早期（红移 136 到 99，即宇宙诞生之后的 1.0 到 1.7 亿年 <a class="footnote-reference" href="#id20" id="id16">[6]</a> ）具备化学生命产生的条件。<a class="footnote-reference" href="#id21" id="id17">[7]</a> 除了假定这些早期的生命，我们还需要假定他们的大规模破坏性的武器跟当前具有类似的行为，即产生大量的高能光子，而且持续时间短暂。其中两种可能性是，古老的文明一直延续到今天，或者虽然灭亡了但是遗迹被后来的文明发现，复制出了这种武器。</p>
+<p>而或许，这种武器就是让恒星坍缩而已，是很容易想到的一种威力巨大的武器。</p>
+<table class="docutils footnote" frame="void" id="id18" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id13">[4]</a></td><td><a class="reference external" href="http://arxiv.org/abs/1307.6156">The highest redshift gamma-ray bursts</a><span class="link-target"> [http://arxiv.org/abs/1307.6156]</span> - Tanvir, N.R. arXiv:1307.6156 [astro-ph.CO]</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id19" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id14">[5]</a></td><td>红移物体的光谱往红端移动，在宇宙学中红移是表示推行速度的一个量，根据宇宙学模型可以根据红移计算目标距离我们的距离，也可以计算目标距离宇宙诞生之初的时间。第一批恒星形成与红移 20，而第一批星系形成于红移 6.58。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id20" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id16">[6]</a></td><td>注意宇宙现在的年龄为 137 亿年，而我们的太阳也仅仅 46 亿年的年龄。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id21" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id17">[7]</a></td><td>这是一篇很有趣的论文，因为除了证明这些，论文中还提到了宇宙早期的生命可能通过 panspermia 转移到了其他的新的形式中。</td></tr>
+</tbody>
+</table>
+<table class="last docutils footnote" frame="void" id="id22" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[8]</td><td>arXiv:1312.0613 [astro-ph.CO]</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id23">
+<h3>GRB 作为星际飞船推进器的残留</h3>
+<p>星际航行需要消耗的能量非常多，然而更加重要的是，快速的星际航行所需要的能量密度也非常大，这样剧烈的物理过程几乎全部都有光子辐射，如果能量密度很大，产生的会是高能光子，即 gamma ray。例如采用正反物质湮灭作为能源的话，要产生大量的伽马射线。而为了飞船的安全，需要把这些有害射线导向远离飞船驾驶员的方向——不管是自然的结果还是人为设计的过程，而如果这个方向正好是地球的方向，那么我们就看到了一次伽玛暴。</p>
+<p>如果要解释为外星飞船的话，Mia Molvray 在 1994 年写的这篇 <a class="reference external" href="http://www.molvray.com/sf/grb/grblog2.htm">Gamma Ray Bursters: Unexplained Lights in the Sky</a><span class="link-target"> [http://www.molvray.com/sf/grb/grblog2.htm]</span> 无疑提供了一些思路。</p>
+<p>Mia Molvray 在文中提到了，倘若要往一些遥远的殖民地运送物资，可以使用高速飞行的无人飞船（这样的话也无人在乎狭义相对论的时间效应导致的人生变故，因为是无人的）。不管他们使用的是什么能源，不同的发动机有不同的特征，包括伽玛射线能量随着时间变化的曲线、能量谱等等，会有些许差异。如果找对了方法，我们或许能够将这些飞船从其他的 GRB 中区分出来。</p>
+<p>使用科学的方法探测外星文明的太空飞船的想法很早就有了，早在上个世纪五六十年代就已经开始了，而到了七十年代相关论文的数量就开始增多了。<a href="#id41"><span class="problematic" id="id42"><span id="id24"></span>[8]_</span></a> 实际上相对论速度的飞船飞行的时候，确实会由于与地球的相对论性速度而产生上面提到的 relativistic beaming effect，而很多不同类型的推进技术可能产生的光谱也频繁在论文中出现，具体相关观测数据的分析也有不少，例如 Michael Harris 的这篇 Limits from CGRO/EGRET Data on the Use of Antimatter as a Power Source by Extraterrestrial Civilizations 中就分析了 Compton Gamma Ray Observatory 的数据，如果这些伽玛暴现象为正反物质湮灭的结果的话，那么几乎可以肯定是人工的现象而非自然现象。</p>
+<table class="docutils footnote" frame="void" id="id25" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[8]</td><td><a class="reference external" href="http://www.i4is.org/the-interstellar-index-archive">http://www.i4is.org/the-interstellar-index-archive</a></td></tr>
+</tbody>
+</table>
+<div class="note admonition">
+<p class="first admonition-title">关于 GRB 来自星际飞船的疑问</p>
+<p>然而如果这些 GRB 中真的有些是外星飞船产生的，那么有几个问题难以解释。</p>
+<ol class="last arabic simple">
+<li>如果是飞船，很可能有船坞，也就是说飞船可能会从相同的地方发射。这与我们会看到同一地点出现多次 GRB，这是没有被观测到的。[citation needed] 或许解释是，由于 GRB 的方向性，恰巧对准地球只是一个巧合，由于船坞在轨道上，会转动、移动，大多时候不会朝向地球。</li>
+<li>GRB 是漫天都是的，而且均匀分布。原因可能是由于 GRB 的方向性（相对论速度飞行的飞船的 relativistic beaming effect 所导致的），而飞船运动方向可能在变化，从而导致仅仅在某些特殊情况，这些 GRB 可以被我们看到，并且持续很短的时间。另外，飞船产生的只是我们所观测到的 GRB 其中非常非常少的一部分，另一些可能是自然的，可能是战争的，可能是其他的。</li>
+<li>为什么是一个爆发，而不是持续的？这个疑问的解释可能由 2 中的飞船的飞行姿态一直在变化来解释。另外可能的解释是，或许飞船并不是完全由这种引擎推动的，或许这种引擎只是用来引发某种效应。例如可能飞船需要点燃引擎几秒钟，然后可以进入超空间了。所以我们只能观测到非常短暂的 GRB。</li>
+<li>为什么他们不来找我们地球文明？这或多或少就归结到费米悖论了。&lt;注释开始&gt;费米悖论会在以后的专栏中有专门的一篇。&lt;/注释结束&gt;不过或许，像《基地》里面的银河帝国一样，这些文明来自地球，但是由于种种原因，他们已经忘却了地球，或者不想回到地球，或者被某些谣言所恐吓，或者想要保存地球这种新生的文明。</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="id26">
+<h2><span class="target" id="index-6"></span>外星生命和外星文明</h2>
+<div class="section" id="id27">
+<h3><span class="target" id="index-7"></span>费米悖论</h3>
+<div class="hint admonition">
+<p class="first admonition-title">相关故事</p>
+<ol class="arabic simple">
+<li>黑暗森林出现在了刘慈欣的《三体》系列中。</li>
+<li>电影《黑衣人》系列虽然略带搞笑风格，但是也是一种潜在的可能的解释：外星人就在我们身边，但是我们不知道。</li>
+<li>电影《2001太空漫游》的说法是外星智慧跟我们想象的形式完全不同。</li>
+</ol>
+<p>以上是经典作品。</p>
+<ol class="arabic simple">
+<li>拙作 <a class="reference external" href="http://multiverse.lamost.org/blog/6455">《梦与新世界》</a><span class="link-target"> [http://multiverse.lamost.org/blog/6455]</span> 是尝试使用在银河系的旋臂外缘的文明相隔太远，谁也没法飞到对方星系这样的设定。但是这是一个费米悖论局域的解释，也就是说，这个或许只是对于我们太阳系有效，如果靠近银河系银心，恒星数密度更大了，或许大家相距更近些。</li>
+<li>关于使用上面的理论来解释费米悖论应用到近未来科幻的一些想法：<a class="reference external" href="http://www.guokr.com/blog/793766/">我们将看到的地外文明</a><span class="link-target"> [http://www.guokr.com/blog/793766/]</span> 。</li>
+</ol>
+<p class="last">这里部分参考了 <a class="reference external" href="http://www.guokr.com/article/283356/">《科幻概念解读：费米悖论》</a><span class="link-target"> [http://www.guokr.com/article/283356/]</span> 这篇文章。</p>
+</div>
+<div class="note admonition">
+<p class="first admonition-title">说明</p>
+<p>关于费米悖论，星际移民中心的 <a class="reference external" href="http://interimm.org/exoplanets">《系外行星文档》</a><span class="link-target"> [http://interimm.org/exoplanets]</span> 描述过多种不同的解释。以下为摘录。</p>
+<p class="last"><strong>为了做更多的讨论，我们提出推广的费米悖论：宇宙如此之大，如果一个文明没有发现外星文明，他们或许会问为什么。这样推广之后就不再是基于地球人了，因为这个问题的具体的解释可能跟一个行星的地理位置等有关。</strong></p>
+</div>
+<p>我们发现了这么多的行星，可是为什么我们还没有遇到外星人呢？他们都到哪里去了？</p>
+<p>1950年，费米问出这个问题（Whre are they?）的时候，我们并没有观测到太阳系之外的行星，在那样一个年代，这样的问题似乎并不是那么有趣。</p>
+<p>现在我们已经确认了一千多颗系外行星，几千颗候选，而且这些数字还在继续增长。时至今日，费米的这个问题越来越重要，如果有那么多的栖居地，大家都在哪里呢？</p>
+<div class="note admonition">
+<p class="first admonition-title">费米悖论</p>
+<blockquote class="last">
+<div><p>宇宙显著的尺度和年龄意味着高等地外文明应该存在。</p>
+<p>The apparent size and age of the universe suggest that many technologically advanced extraterrestrial civilizations ought to exist.</p>
+<p>但是，这个假设得不到充分的证据支持。</p>
+<p>However, this hypothesis seems inconsistent with the lack of observational evidence to support it.</p>
+<p class="attribution">&mdash;<a class="reference external" href="http://zh.wikipedia.org/wiki/%E8%B4%B9%E7%B1%B3%E6%82%96%E8%AE%BA">费米悖论|维基百科</a><span class="link-target"> [http://zh.wikipedia.org/wiki/%E8%B4%B9%E7%B1%B3%E6%82%96%E8%AE%BA]</span></p>
+</div></blockquote>
+</div>
+<div class="section" id="david-brin-great-silence">
+<span id="index-8"></span><h4>David Brin 的 Great Silence</h4>
+<p>Glen David Brin 在 1983 年曾经发表过一篇名为 <a class="reference external" href="http://www.brin-l.com/downloads/silence.pdf">The Great Silence - the Controversy Concerning Extraterrestrial Intelligent Life</a><span class="link-target"> [http://www.brin-l.com/downloads/silence.pdf]</span> 的论文。在篇论文中，David Brin 导出了一个类似用来描述在当前人类接触到 ETIS，即 Extraterrestrial Intelligent Species，的几率。</p>
+<div class="note admonition">
+<p class="first admonition-title">Drake 方程</p>
+<p>Drake 方程是用来计算（描述）一个完整范围内（例如一个星系）存在可以被探测到的智慧文明的地点（例如行星）的数目：</p>
+<div class="math">
+\[E = R f_g n_e f_1 f_i f_c L，\]</div>
+<p>其中各个参数的意思在下面的列表中指明。</p>
+<ul class="last simple">
+<li><span class="math">\(R\)</span>，该完整范围内的恒星的产生率；</li>
+<li><span class="math">\(f_g\)</span>，有行星的稳定的（矮）恒星；</li>
+<li><span class="math">\(n_e\)</span>，每个恒星系中的潜在的可以利用的行星；</li>
+<li><span class="math">\(f_1\)</span>，上面提到的行星中能产生生命的比率；</li>
+<li><span class="math">\(f_i\)</span>，所有产生的生命中，演化出智能的比率；</li>
+<li><span class="math">\(f_c\)</span>，上面提到的智慧生命中制造出可以被检测到的技术的比率；</li>
+<li><span class="math">\(L\)</span>，带有这样的技术的种类的寿命。</li>
+</ul>
+</div>
+<p>当前（电磁波通信，低速飞船这样的技术水平）人类遇到外星智慧生命的概率（更严格的说是 likelihood）可以用下式计算，</p>
+<div class="math">
+\[C = \frac{1}{N^*}\sum_{j=1}^{E} A_j (n_j+1).\]</div>
+<p>公式中的 <span class="math">\(E\)</span> 就是 Drake 方程计算出来的存在可以探测到的智慧文明的栖居点。<span class="math">\(A_j\)</span> 是第 j 种演化出来的智慧生命栖居的或者排出的机器人（例如 von Neuman robot）所占据的栖居点的数目，之所以有个 <span class="math">\(+1\)</span> 是因为我们假定这个种类的生命是在其母星上演化出来的，所以他们总共在 <span class="math">\(n_j+1\)</span> 个行星上留下了痕迹。<span class="math">\(A_j\)</span> 是这类智慧生命的“接触截面”（contact cross-section），是这类生命跟其他的生命有接触的可能性的一个参数。<span class="math">\(N^*\)</span> 是“归一化”系数，这里选用有效的恒星数目，去掉了那些不合适的恒星（例如短寿命的恒星，太过靠近的双星等等）。</p>
+<p>David Brin 提出了 <span class="math">\(n_j\)</span> 的一个形式，</p>
+<div class="math">
+\[n_j = B f_g n_e 4 \pi \int_0^{R_j} e^{-(R_j-r)/v L'}\mathrm d r,\]</div>
+<p><span class="math">\(B\)</span> 是恒星的数密度，<span class="math">\(R_j\)</span> 是该种类的生命的扩展范围的半径，<span class="math">\(v\)</span> 是他们的扩展速度（与他们的飞船的速度、繁殖速度等有关），<span class="math">\(L'\)</span> 是每个栖居点上面的寿命（与 <span class="math">\(L\)</span> 有关）。</p>
+<p>这样总结下来，我们关心的量 C，即当前人类遇到外星智慧生命的 likelihood 与这些的参数相关：<span class="math">\(f_g\)</span>、<span class="math">\(n_e\)</span>、<span class="math">\(f_1\)</span>、<span class="math">\(f_c\)</span>、<span class="math">\(f_i\)</span>、<span class="math">\(L\)</span>、<span class="math">\(A\)</span>. 要解决这个问题，就要分别讨论这些量。</p>
+<div class="note admonition">
+<p class="first admonition-title">关于为什么我们接触不到外星智慧生命</p>
+<p>有很多关于这个问题的讨论。下面从 David Brin 的论文中节选一些列举出来。</p>
+<ol class="last arabic simple">
+<li>外星智慧生命可能故意躲开我们这样的低级的智能或技术。毕竟相遇之后我们大多在获取新的信息，而不能提供给他们新的信息。</li>
+<li>由于电磁波很容易被检测到，所以智慧生命可能会使用 <a class="reference external" href="https://en.wikipedia.org/wiki/Bracewell_probe">Bracewell probe</a><span class="link-target"> [https://en.wikipedia.org/wiki/Bracewell_probe]</span> 来传递信息，从而减少电磁波的使用和泄露，而且他们也会很注意少使用用来扩展殖民地的机器人（可能会叛变失去控制）。</li>
+<li>因为我们的探测方式不对。</li>
+<li>外星智慧生命故意隔离我们。可能的原因例如，把我们太阳系当作一个大型的野生动物园来看待（Ball, John A., 1973. Icarus, 19, 347），想要让地球独立发展以期待新的类型的事物出现（Kuiper, T.B.H. &amp; Morris, M., 1977. Science, 196, 616）。也可能是等待地球上的社会发展成熟，或者觉得地球上人类太过危险（获得与社会发展以及人类心智不相匹配的科技之后）。</li>
+<li>Macrolife：摒弃了在行星上生活的方式。例如建造大型飞船游走在太空中，甚至拆解行星作为自己的飞船的原料。例如小说 Macrolife.</li>
+<li>某些种类可能害怕太空，在行星上极力发展其他的技术并达到了出神入化的程度，但是依然没有离开自己的行星。例如虽然有过一个短暂的扩展时期，但是很快就蜗居在自己的母星上不出门了。</li>
+<li>地球并不是他们想要的地方或者地球无法接近。例如这些智慧生命依靠某种类似虫洞的技术来快速穿越在不同的地方，但是由于某些原因，这类技术不能在地球附近建造，从而与地球没有接触。</li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="first admonition-title">小知识：星系围绕银河系中心的公转</p>
+<p class="last">由于公转的角速度不一样，所以径向方向的邻居会变化。</p>
+</div>
+</div>
+<div class="section" id="index-9">
+<span id="id33"></span><h4>刘慈欣的黑暗森林</h4>
+</div>
+<div class="section" id="randall-munroe-xkcd-fish">
+<h4><span class="target" id="index-10"></span>Randall Munroe (xkcd) 的 Fish</h4>
+<div class="figure align-center">
+<img alt="Randall Munroe's Fish" src="http://imgs.xkcd.com/comics/fish.png" />
+<p class="caption">Randall Munroe 的 <a class="reference external" href="http://xkcd.com/1377/">1377号</a><span class="link-target"> [http://xkcd.com/1377/]</span> 漫画。</p>
+</div>
+</div>
+<div class="section" id="bezsudnov-snarskii">
+<span id="index-11"></span><h4>Bezsudnov 和 Snarskii 的智慧扩张模型</h4>
+<p>他们的论文在这里：<a class="reference external" href="http://arxiv.org/abs/1007.2774">Where is everybody? &#8211; Wait a moment ... New approach to the Fermi paradox</a><span class="link-target"> [http://arxiv.org/abs/1007.2774]</span> .</p>
+<p>果壳网有一篇相关的科普文：<a class="reference external" href="http://www.guokr.com/article/129942/">为什么我们还没遇到外星人？</a><span class="link-target"> [http://www.guokr.com/article/129942/]</span> 。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id36">
+<h2>操控目前认为是基本常数的物理量</h2>
+<div class="warning admonition">
+<p class="first admonition-title">待补充</p>
+<p class="last">这部分待补充。</p>
+</div>
+<p>例如精细结构常数，例如电子质量。对这些的操控自然需要一个更加底层的理论，基本上都是在操控这些常数相关联的相互作用的耦合。</p>
+<p>例如我们找到了影响 Higgs 场强度耦合常数的方法，或许可以操控电子质量。</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, 章鱼喵.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b2.
+    </div>
+  </body>
+</html>
