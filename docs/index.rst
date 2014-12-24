@@ -1,4 +1,4 @@
-.. Exoplanets documentation master file, created by
+.. documentation master file, created by
    sphinx-quickstart on Wed May 28 18:44:33 2014.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -27,6 +27,7 @@
    superpower.rst
    history.rst
    misc.rst
+   citing.rst
 
 
 
@@ -36,7 +37,7 @@
 
 本文档由 `星际移民中心 <http://interimm.github.io/>`_ 提供支持。
 
-文档内容若无特殊说明使用 CC BY-SA 协议。
+文档内容若无特殊说明使用 CC BY-SA 协议。请保留原文链接并注明原作者为“章鱼喵”，推演作品请同样注明并说明推演。
 
 .. image:: https://raw.github.com/opentf/GuokrBadge/master/cc/gs/cc_bysa.flat.guokr.32.png
    :align: center
