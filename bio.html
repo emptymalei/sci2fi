@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>生物 &mdash; 科学与科幻 3.14 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '3.14',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="科学与科幻 3.14 documentation" href="index.html" />
+    <link rel="next" title="其他" href="misc.html" />
+    <link rel="prev" title="历史" href="history.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="misc.html" title="其他"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="history.html" title="历史"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">科学与科幻 3.14 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>生物<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>视觉<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>更多谱段的视觉细胞<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>如果人的眼睛中除了处理三种波段的细胞，还有另外的处理其他种类的视锥细胞，那么可以感受更复杂的视觉。</p>
+<div class="note admonition">
+<p class="first admonition-title">人类的视觉</p>
+<p>人感受颜色是通过视锥细胞来实现的，三种视锥细胞为 L 型（长波段，红色），M 型（中间波段，绿色），S 型（短波段，蓝色段）。顺便一只人眼中大约有六七百万的视锥细胞。</p>
+<div class="figure align-center">
+<img alt="_images/Cones_SMJ2_E.svg.png" src="_images/Cones_SMJ2_E.svg.png" />
+<p class="caption">三种视锥细胞能感受的光谱。来源：<a class="reference external" href="https://en.wikipedia.org/wiki/File:Cones_SMJ2_E.svg">File:Cones SMJ2 E.svg</a> ，GNU Free Documentation License.</p>
+</div>
+<p>仔细的说来，通过视锥细胞里面的三种不同的蛋白质来响应不同的波段的光信号。然后信号被传递到大脑中，经过复杂的过程，才形成了我们的视觉。</p>
+<p>从数学上来看，视网膜所做的，是进行零散的傅里叶展开：使用 L，M，S 三组颜色完备基矢来展开光信号。例如某种与位置和时间有关的信号落在视网膜上。我们的视网膜对光信号做了如下处理：</p>
+<div class="math">
+\[f(r,\theta,t;\lambda) = \sum_{i=L,M,S} g(r,\theta,t) e_i,\]</div>
+<p>这里面 <span class="math">\(r\)</span>, <span class="math">\(\theta\)</span> 是用来指定在视网膜上的位置的， <span class="math">\(\lambda\)</span> 是波长。也就是说除了偏振以外的所有的光信息可以看做一个光谱，与视网膜上的位置有关，并且随着时间变化。使用 L，M，S 三组基矢我们把这个光信息展开了。</p>
+<p class="last">然而这是不完备的展开，仅仅是在三色颜色空间的展开。严格来说，我们需要的是一个连续的傅里叶展开。</p>
+</div>
+<p>例如一个例子是四色型视觉（tetrachromacy）。鲫鱼和斑马鱼具有四色型视觉，他们除了能够感受人能感受到的红绿蓝之外，还能感受到紫外波段。<a class="footnote-reference" href="#id6" id="id4">[1]</a> 另外的例子是某些鸟类，例如 斑胸草雀[4]_ ，可以看到紫外，波长短至 300nm。既然谈到了四色型视觉，那么五色型视觉呢？六色型视觉呢？</p>
+<div class="figure align-center">
+<img alt="_images/zebrafishUV.png" src="_images/zebrafishUV.png" />
+<p class="caption">斑马鱼可以看到紫外的波段。<a class="footnote-reference" href="#id7" id="id5">[2]</a></p>
+</div>
+<div class="figure align-center">
+<img alt="_images/Zebra_finch.jpg" src="_images/Zebra_finch.jpg" />
+<p class="caption">斑胸草雀。来源 <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Zebra_finch.jpg">File:Zebra finch.jpg</a></p>
+</div>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[1]</a></td><td><a class="reference external" href="https://en.wikipedia.org/wiki/Tetrachromacy#Fish">Tetrachromacy</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[2]</a></td><td><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC46856/?page=2">Zebrafish ultraviolet visual pigment: absorption spectrum, sequence, and localization.</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[4]</td><td><a class="reference external" href="https://zh.wikipedia.org/wiki/%E6%96%91%E8%83%B8%E8%8D%89%E9%9B%80">斑胸草雀</a></td></tr>
+</tbody>
+</table>
+<div class="note admonition">
+<p class="first admonition-title">人类的四色型视觉</p>
+<p>实际上有人类四色型视觉的案例。<a class="footnote-reference" href="#id12" id="id10">[5]</a> 然而，在人的身上，即便我们有了响应第四种波段的光的细胞，这个信号能否单独的预处理并传递给大脑皮层，需要很多其他的研究需要确认。</p>
+<p>有些人可能是潜在的四色型视觉，他们可能比正常人多出一类细胞即 L&#8217; 型，可以感受红绿之间的一个波段。</p>
+<div class="figure align-center">
+<img alt="_images/lprimeclass.png" src="_images/lprimeclass.png" />
+<p class="caption">L&#8217; 细胞的感光用虚线标出。灰色谱是被观测物体的谱。来自 <a class="reference external" href="https://www.youtube.com/watch?v=9JnyL9t4U8s&amp;list=PL0E0WeeWBt-94L7HvAxmVA2InA09a0vPt">此视频</a> 的屏幕截图。</p>
+</div>
+<table class="last docutils footnote" frame="void" id="id12" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id10">[5]</a></td><td><a class="reference external" href="http://web.archive.org/web/20120214002707/http://www.klab.caltech.edu/cns186/papers/Jameson01.pdf">Jordan, G.; Mollon, J. D. (1993). &#8220;A study of women heterozygous for colour deficiencies&#8221;. Vision research 33 (11): 1495–1508.</a></td></tr>
+</tbody>
+</table>
+</div>
+<p>既然是脑洞文，<strong>如果一个人想要看到紫外波段呢？</strong> 一个可能的脑洞是：干细胞-&gt;敲掉基因-&gt;换上新的蛋白对应的基因-&gt;培养成视锥细胞-&gt;植入视网膜（替换原来某些视锥细胞）。<a class="footnote-reference" href="#id15" id="id13">[3]</a> 然而这解决了探测器的问题，我们还需要解决信号的传输和处理。倘若新植入的视锥细胞的信号是单独处理并且送往大脑皮层，那么视觉信息的处理会很混乱。最好的情况是，新的信息像 L，M，S 一样具有一定的独立性。这样假定大脑能够处理的话，就可以得到更加详细的频谱信息。<a class="footnote-reference" href="#id16" id="id14">[6]</a></p>
+<table class="docutils footnote" frame="void" id="id15" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id13">[3]</a></td><td>感谢某水群中的各位，特别是&#64;飘飘提供的干细胞思路。</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id16" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id14">[6]</a></td><td>此处忽略视觉处理时 LGN，眼优势柱，XY 体系这些细节。倘若考虑的话，XY 体系和眼优势柱会非常有用。XY 这里可以用来分开传递信息，视优势柱可以设计出更好的时间相应（变成相空间的视优势柱）等等。</td></tr>
+</tbody>
+</table>
+<div class="note admonition">
+<p class="first admonition-title">多色型视觉应用：绘画中的秘密</p>
+<p>达芬奇是一名 tetrachromat，具有四色型视觉。他在自己的一副绘画中藏了只有四色型视觉才能看到的秘密。这个秘密只能四色型视觉的人才能知道。达芬奇的后人一直保留着这幅画，但是从某一代之后就不再有四色型视觉。这个秘密在后来被其他人一个人发现了。然后……</p>
+<p class="last">就这样。</p>
+</div>
+</div>
+<div class="section" id="id17">
+<h3>可控制谱段的视觉<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>倘若我们的光感受器中的蛋白的响应谱段是可以通过离子浓度（或其他手段）来调节的[7]_ ，这样我们可以控制我们眼睛看到的谱段。</p>
+<p>例如我们可以降低溶液浓度来使得蛋白质的敏感谱段像红端移动，这样我们就可以在夜晚需要活动的时候调节到这个模式，从而看到红外的光谱。</p>
+<table class="docutils footnote" frame="void" id="id18" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[7]</td><td>蛋白质构型是取了在某个环境中的能量（自由能）极值点，改变溶液可以改变周围电势能的分布，如此改变蛋白质构型的可能性也不是没有的。或者简单的模仿细胞膜上的离子通道。</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id19">
+<h3>感受连续谱段的视觉细胞<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id20">
+<h3>更大面积的视网膜感光细胞分布<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<p>人的眼睛中存在一种 Muller 细胞，这种细胞可以起到光波导的作用。</p>
+<div class="note admonition">
+<p class="first admonition-title">Muller 细胞</p>
+<div class="last figure align-center">
+<img alt="_images/mullercells.png" src="_images/mullercells.png" />
+<p class="caption">Muller 细胞的光波导性质。来源：<a class="reference external" href="http://physics.aps.org/story/v25/st15">&#8220;Retinal Glial Cells Enhance Human Vision Acuity&#8221; A. M. Labin and E. N. Ribak, Phys. Rev. Lett. 104, 158102 (2010)</a></p>
+</div>
+</div>
+<p>我们可以设想这样一种人眼，视网膜整个内壁都是视细胞并且与视神经相连，在这些光波导的某些地方使用“分光镜”，将光线部分导入到视网膜的其他地方。（还有一部分用来观测光在眼球内的散射从而判断信息。）</p>
+<p>而这些其他地方的视细胞或许有特殊性，例如可以探测其他波段的信息。这样大脑皮层视觉区可以有一部分专门处理这个。平时我们并不会用到，但是如果在这些波段出现了异常，我们可以感受到，并且专注在这些波段。</p>
+<div class="note admonition">
+<p class="first admonition-title">感受到红外波段的应用</p>
+<p>视网膜的内壁某些可以感受红外波段的细胞，如果身边的红外热源突然发生变化，我们就可以感受到并且去观察。</p>
+<p class="last">例如有人从背后接近自己，我们这部分细胞会感受到有个热源越来越强，说明在靠近自己，这样我们就知道，背后有人！<strong>武林高手无法从背后被偷袭什么的，一定是这样的。</strong></p>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>偏振<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>有的复眼可以看到偏振。<a class="footnote-reference" href="#id23" id="id22">[8]</a> 偏振用处很大，通过调节偏振，我们可以消除影响我们视觉的反射光等等。</p>
+<table class="docutils footnote" frame="void" id="id23" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id22">[8]</a></td><td><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S0167931703001023">Miniaturized imaging systems</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id24">
+<h2>参考即注释<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<p>【要删】5</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">科学与科幻</a></h1>
+
+
+
+
+
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=emptymalei&repo=sci2fi&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+<h3>科幻菜单</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="physics.html">物理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="astro.html">天体物理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interdispline.html">交叉学科</a></li>
+<li class="toctree-l1"><a class="reference internal" href="social.html">科幻中的社会元素</a></li>
+<li class="toctree-l1"><a class="reference internal" href="superpower.html">超能力</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">历史</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">生物</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">视觉</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id24">参考即注释</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">其他</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">引用和重制</a></li>
+</ul>
+
+
+<ul>
+	<li><a href="genindex.html">索引</a></li>
+</ul>
+<h3>相关链接</h3>
+<ul>
+	<li class="toctree-l1"><a href="http://interimm.org" style="color:orange;">星际移民中心&nbsp;<i class="fa fa-rocket"></i></a></li>
+	<li class="toctree-l1"><a href="http://interimm.org/exoplanets" style="color:orange;">系外行星文档&nbsp;<i class="fa fa-globe"></i></a></li>
+</ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3>赞助</h3>
+<p>
+在 <a href="https://www.gratipay.com/">Gratipay</a> 上赞助我:
+<script data-gratipay-username="emptymalei"
+        data-gratipay-widget="button"
+        src="//gttp.co/v1.js"></script>
+</p>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" style="border-top:1px solid #B1B4B6;">
+
+<!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="" data-title="生物 &mdash; 科学与科幻 3.14 documentation" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"sci2fi"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
+
+      &copy;2014, 章鱼喵. | <a href="citing.html">使用本作品内容</a> |
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.2b2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster </a>
+      
+      |
+      <a href="_sources/bio.txt"
+          rel="nofollow">Page source</a></li>
+    </div>
+
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-49034078-5']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>
