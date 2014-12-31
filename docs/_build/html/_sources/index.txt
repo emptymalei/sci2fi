@@ -26,6 +26,7 @@
    social.rst
    superpower.rst
    history.rst
+   bio.rst
    misc.rst
    citing.rst
 
